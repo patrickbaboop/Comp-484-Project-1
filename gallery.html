@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery | Patrick Banting</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container navbar">
+      <div class="brand">
+        <strong>Patrick Banting</strong>
+        <span translate="no">@piiijay • Digital Editing</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="techniques.html">Techniques</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>Gallery</h1>
+      <p class="small">Examples of how edits change the final look. Replace images with your own.</p>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>Before → After</h2>
+        <p class="small">A simple example of color correction + sharpening.</p>
+
+        <!-- Tip: Put two images side-by-side by just stacking them; CSS keeps it clean. -->
+        <img class="hero-img" src="media/before.jpg" alt="Before edit (raw media)" />
+        <img class="hero-img" src="media/after.jpg" alt="After edit (polished result)" />
+      </article>
+
+      <article class="card">
+        <h2>Brightness preview</h2>
+        <p class="small">A tiny “editing controls” demo using a slider.</p>
+
+        <!-- UNIQUE ELEMENT #3: <output>
+             Practical use: shows live slider value (editing-style control).
+             MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/output -->
+        <form oninput="level.value = brightness.value">
+          <label for="brightness">Brightness</label>
+          <input id="brightness" name="brightness" type="range" min="0" max="100" value="50" />
+          <p class="small">Value: <output name="level">50</output></p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span translate="no">Patrick Banting (@piiijay)</span></p>
+    </div>
+  </footer>
+</body>
+</html>

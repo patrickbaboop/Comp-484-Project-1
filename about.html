@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Patrick Banting</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="container navbar">
+      <div class="brand">
+        <strong>Patrick Banting</strong>
+        <span translate="no">@piiijay • Digital Editing</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="techniques.html">Techniques</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>About</h1>
+      <p class="small">
+        I’m Patrick Banting, and I enjoy transforming raw photos/videos into polished visuals using editing techniques.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact / Feedback</h2>
+      <p class="small">This form is for the project demo (it doesn’t send anywhere yet).</p>
+
+      <form>
+        <label for="name">Name</label>
+
+        <!-- UNIQUE ATTRIBUTE #2: inputmode
+             Practical use: helpful mobile keyboard choice (here, "text" is default but shown as example).
+             MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode -->
+        <input id="name" type="text" inputmode="text" placeholder="Your name" />
+
+        <label for="rating">Rate the edit (1-10)</label>
+
+        <!-- UNIQUE ATTRIBUTE #2 (better use): inputmode="numeric"
+             Practical use: brings up number keypad on mobile.
+             MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode -->
+        <input id="rating" type="text" inputmode="numeric" placeholder="e.g., 8" />
+
+        <label for="message">Message</label>
+
+        <!-- UNIQUE ATTRIBUTE #1: spellcheck
+             Practical use: turn on spellcheck for captions/feedback text.
+             MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/spellcheck -->
+        <textarea id="message" spellcheck="true" placeholder="What did you like? What could be improved?"></textarea>
+
+        <!-- UNIQUE ATTRIBUTE #3: translate
+             Practical use: prevents usernames/handles from being auto-translated.
+             MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/translate -->
+        <p class="small">TikTok: <span translate="no">@piiijay</span></p>
+
+        <button type="button">Submit (demo)</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span translate="no">Patrick Banting (@piiijay)</span></p>
+    </div>
+  </footer>
+</body>
+</html>
